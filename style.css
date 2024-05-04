@@ -1,0 +1,77 @@
+.container {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+#numberTable {
+  margin-bottom: 20px;
+  border: 3px solid black;
+  border-radius: 5px;
+}
+#numberTable td {
+  /* border-radius: 50%; */
+  border: 1px solid grey;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+#drawButton {
+  padding: 1rem;
+}
+
+#drawnNumbers {
+  border: 3px solid red;
+  border-radius: 5px;
+  padding: 2rem;
+  display: none;
+  font-size: 2rem;
+}
+
+#numberTable td:hover,
+#numberTable td.clicked {
+  background-color: lightgray;
+  border-radius: 50%;
+}
+
+/* Modal content */
+.modal {
+  display: none; /* Hide modal by default */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  font-size: 1.5rem;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+/* Close button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
